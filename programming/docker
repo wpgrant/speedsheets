@@ -64,7 +64,7 @@ Examples of filters
 * dangling=true
 * label (label=\<key> or label=\<key>=\<value>)
 * before (\<image-name>[:<tag>], \<image id> or \<image@digest>)
-* since (<image-name>[:\<tag>], \<image id> or \<image@digest>)
+* since (\<image-name>[:\<tag>], \<image id> or \<image@digest>)
 reference (pattern of an image reference)
 
 #### docker rmi \<image>
