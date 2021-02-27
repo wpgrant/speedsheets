@@ -62,12 +62,12 @@ Get a list based on one or more filters. (Each filter requires --filter/-f befor
 
 Examples of filters
 * dangling=true
-* label (label=<key> or label=<key>=<value>)
-* before (<image-name>[:<tag>], <image id> or <image@digest>)
-* since (<image-name>[:<tag>], <image id> or <image@digest>)
+* label (label=\<key> or label=\<key>=\<value>)
+* before (\<image-name>[:<tag>], \<image id> or \<image@digest>)
+* since (<image-name>[:\<tag>], \<image id> or \<image@digest>)
 reference (pattern of an image reference)
 
-#### docker rmi <image>
+#### docker rmi \<image>
 Remove (and un-tag) an image.
 
 -------
