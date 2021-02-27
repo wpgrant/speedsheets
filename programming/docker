@@ -1,0 +1,79 @@
+# Docker
+
+## Summary
+Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.[7] Because all of the containers share the services of a single operating system kernel, they use fewer resources than virtual machines.
+(Definition from Wikipedia)
+
+## Tools
+* <b>Docker Compose</> is a tool for defining multi-container Docker applications.
+* <b>Docker Swarm</> provides clustering for Docker, by turning a group of Docker engines into a single engine.
+
+## Installation
+<l>https://docs.docker.com/get-docker/</>
+
+## Concepts
+
+### Images
+An image is a template for creating containers. Images can be based on other images. Images are created with Dockerfiles that define how the image is created and run.
+
+### Containers
+A container is a runnable instance of an image. Containers can be created, started, stopped, moved and deleted. A container can be connected with other containers or the host; by default it is reasonably isolated.
+
+## Getting started
+This is the hello world of Docker
+<cb>$ docker run -i -t ubuntu /bin/bash</>
+Such a small command accomplishes a lot
+* If the ubuntu image hasn't already been downloaded, it is downloaded now
+* A new container is run
+* Docker gives the container a read/write filesystem
+* An IP address is assigned to the container, providing access from the host
+* A shell is open inside the container, so additional commands can be run
+* Upon exiting, the shell is closed and container is shutdown (but not deleted)
+
+## Commands
+
+### Commands for Images
+
+#### docker images
+Get a list of all images
+<cb>
+$ docker images
+REPOSITORY      TAG               IMAGE ID       CREATED         SIZE
+python-docker   latest            8cae92a8fbd6   3 minutes ago   123MB
+python          3.8-slim-buster   be5d294735c6   9 days ago      113MB
+</>
+
+#### docker images [Repository[:TAG]]
+Get a list of images by repository or repository+tag. Matches must be exact.
+<cb>
+$ docker images java
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+java                8                   308e519aac60        6 days ago          824.5 MB
+java                7                   493d82594c15        3 months ago        656.3 MB
+java                latest              2711b1d6f3aa        5 months ago        603.9 MB
+
+$ docker images java:8
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+java                8                   308e519aac60        6 days ago          824.5 MB
+</>
+
+#### docker images --filter (or -f)
+Get a list based on one or more filters. (Each filter requires --filter/-f before it).
+
+Examples of filters
+* dangling=true
+* label (label=<key> or label=<key>=<value>)
+* before (<image-name>[:<tag>], <image id> or <image@digest>)
+* since (<image-name>[:<tag>], <image id> or <image@digest>)
+reference (pattern of an image reference)
+
+#### docker rmi <image>
+Remove (and un-tag) an image.
+
+-------
+
+## TODO
+
+### Commands for Containers
+
+## Dockerfile
