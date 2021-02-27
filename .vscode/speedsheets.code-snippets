@@ -1,141 +1,103 @@
 {
-	// Place your speedsheets workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"Heading": {
-		"prefix": "h1",
-		"body": [
-			"# $1",
-			"$0"
-		],
-		"description": "Add heading"
-	},
-	"Sub-Heading": {
-		"prefix": "h2",
-		"body": [
-			"## $1",
-			"$0"
-		],
-		"description": "Add heading"
-	},
-	"Sub-Sub-Heading": {
-		"prefix": "h3",
-		"body": [
-			"### $1",
-			"$0"
-		],
-		"description": "Add heading"
-	},
-	"Sub-Sub-Sub-Heading": {
-		"prefix": "h4",
-		"body": [
-			"#### $1",
-			"$0"
-		],
-		"description": "Add heading"
-	},
-	"Bold": {
-		"prefix": "bold",
-		"body": [
-			"<b>$1</>$2"
-		],
-		"description": "Add bold"
-	},
-	"Italics": {
-		"prefix": "italics",
-		"body": [
-			"<i>$1</>$2"
-		],
-		"description": "Add italics"
-	},
-	"Soft": {
-		"prefix": "soft",
-		"body": [
-			"<s>$1</>$2"
-		],
-		"description": "Add soft"
-	},
-	"Important": {
-		"prefix": "important",
-		"body": [
-			"<!>$1</>$2"
-		],
-		"description": "Add important"
-	},
-	"Comment": {
-		"prefix": "comment",
-		"body": [
-			"<#>$1</>$2"
-		],
-		"description": "Comment"
-	},
-	"User": {
-		"prefix": "user",
-		"body": [
-			"<u>$1</>$2"
-		],
-		"description": "Add user"
-	},
-	"Link": {
-		"prefix": "link",
-		"body": [
-			"<l>$1</>$2"
-		],
-		"description": "Add link"
-	},
-	"Link with Text": {
-		"prefix": "linktext",
-		"body": [
-			"<l $1>$2</>$3"
-		],
-		"description": "Add link with text"
-	},
-	"Code": {
-		"prefix": "code",
-		"body": [
-			"<c>$1</>$2"
-		],
-		"description": "Code"
-	},
-	"Code Box": {
-		"prefix": "codebox",
-		"body": [
-			"<cb>$1</>$2"
-		],
-		"description": "Code Box"
-	},
-	"Image": {
-		"prefix": "image",
-		"body": [
-			"<image $1>$2"
-		],
-		"description": "Code Box"
-	},
-	"Tag": {
-		"prefix": "tag",
-		"body": [
-			"<@>$1</>$2"
-		],
-		"description": "Tag"
-	},
-	"Tag Line": {
-		"prefix": "tagline",
-		"body": [
-			"@$1"
-		],
-		"description": "Code Box"
-	},
+  // Place your speedsheets workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Heading": {
+    "prefix": "h1",
+    "body": ["# $1", "$0"],
+    "description": "Add heading"
+  },
+  "Sub-Heading": {
+    "prefix": "h2",
+    "body": ["## $1", "$0"],
+    "description": "Add heading"
+  },
+  "Sub-Sub-Heading": {
+    "prefix": "h3",
+    "body": ["### $1", "$0"],
+    "description": "Add heading"
+  },
+  "Sub-Sub-Sub-Heading": {
+    "prefix": "h4",
+    "body": ["#### $1", "$0"],
+    "description": "Add heading"
+  },
+  "Bold": {
+    "prefix": "bold",
+    "body": ["<b>$1</>$2"],
+    "description": "Add bold"
+  },
+  "Italics": {
+    "prefix": "italics",
+    "body": ["<i>$1</>$2"],
+    "description": "Add italics"
+  },
+  "Soft": {
+    "prefix": "soft",
+    "body": ["<s>$1</>$2"],
+    "description": "Add soft"
+  },
+  "Important": {
+    "prefix": "important",
+    "body": ["<!>$1</>$2"],
+    "description": "Add important"
+  },
+  "Comment": {
+    "prefix": "comment",
+    "body": ["<#>$1</>$2"],
+    "description": "Comment"
+  },
+  "User": {
+    "prefix": "user",
+    "body": ["<u>$1</>$2"],
+    "description": "Add user"
+  },
+  "Link": {
+    "prefix": "link",
+    "body": ["<l>$1</>$2"],
+    "description": "Add link"
+  },
+  "Link with Text": {
+    "prefix": "linktext",
+    "body": ["<l $1>$2</>$3"],
+    "description": "Add link with text"
+  },
+  "Code": {
+    "prefix": "code",
+    "body": ["<c>$1</>$2"],
+    "description": "Code"
+  },
+  "Code Box": {
+    "prefix": "codebox",
+    "body": ["<cb>$1</>$2"],
+    "description": "Code Box"
+  },
+  "Image": {
+    "prefix": "image",
+    "body": ["<image $1>$2"],
+    "description": "Code Box"
+  },
+  "Tag": {
+    "prefix": "tag",
+    "body": ["<@>$1</>$2"],
+    "description": "Tag"
+  },
+  "Tag Line": {
+    "prefix": "tagline",
+    "body": ["@$1"],
+    "description": "Code Box"
+  }
 }
