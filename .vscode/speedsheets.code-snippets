@@ -58,7 +58,7 @@
   "Comment": {
     "prefix": "comment",
     "body": ["<#>$1</>$2"],
-    "description": "Comment"
+    "description": "Add comment"
   },
   "User": {
     "prefix": "user",
@@ -78,26 +78,26 @@
   "Code": {
     "prefix": "code",
     "body": ["<c>$1</>$2"],
-    "description": "Code"
+    "description": "Add code"
   },
   "Code Box": {
     "prefix": "codebox",
     "body": ["<cb>$1</>$2"],
-    "description": "Code Box"
+    "description": "Add code box"
   },
   "Image": {
     "prefix": "image",
     "body": ["<image $1>$2"],
-    "description": "Code Box"
+    "description": "Add image"
   },
   "Tag": {
     "prefix": "tag",
     "body": ["<@>$1</>$2"],
-    "description": "Tag"
+    "description": "Add tag"
   },
   "Tag Line": {
     "prefix": "tagline",
     "body": ["@$1"],
-    "description": "Code Box"
+    "description": "Add tag line"
   }
 }
