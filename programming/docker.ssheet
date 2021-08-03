@@ -5,11 +5,11 @@ Docker is a set of platform as a service (PaaS) products that use OS-level virtu
 (Definition from Wikipedia)
 
 ## Tools
-* <b>Docker Compose</> is a tool for defining multi-container Docker applications.
-* <b>Docker Swarm</> provides clustering for Docker, by turning a group of Docker engines into a single engine.
+* <b>Docker Compose<> is a tool for defining multi-container Docker applications.
+* <b>Docker Swarm<> provides clustering for Docker, by turning a group of Docker engines into a single engine.
 
 ## Installation
-<l>https://docs.docker.com/get-docker/</>
+<l>https://docs.docker.com/get-docker/<>
 
 ## Concepts
 
@@ -21,7 +21,9 @@ A container is a runnable instance of an image. Containers can be created, start
 
 ## Getting started
 This is the hello world of Docker
-<cb>$ docker run -i -t ubuntu /bin/bash</>
+
+<cb>$ docker run -i -t ubuntu /bin/bash<>
+
 Such a small command accomplishes a lot
 * If the ubuntu image hasn't already been downloaded, it is downloaded now
 * A new container is run
@@ -36,17 +38,17 @@ Such a small command accomplishes a lot
 
 #### docker images
 Get a list of all images
-<cb>
-$ docker images
+
+<cb>$ docker images
 REPOSITORY      TAG               IMAGE ID       CREATED         SIZE
 python-docker   latest            8cae92a8fbd6   3 minutes ago   123MB
 python          3.8-slim-buster   be5d294735c6   9 days ago      113MB
-</>
+<>
 
 #### docker images [Repository[:TAG]]
 Get a list of images by repository or repository+tag. Matches must be exact.
-<cb>
-$ docker images java
+
+<cb>$ docker images java
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 java                8                   308e519aac60        6 days ago          824.5 MB
 java                7                   493d82594c15        3 months ago        656.3 MB
@@ -55,16 +57,16 @@ java                latest              2711b1d6f3aa        5 months ago        
 $ docker images java:8
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 java                8                   308e519aac60        6 days ago          824.5 MB
-</>
+<>
 
 #### docker images --filter (or -f)
 Get a list based on one or more filters. (Each filter requires --filter/-f before it).
 
 Examples of filters
 * dangling=true
-* label (label=\<key> or label=\<key>=\<value>)
-* before (\<image-name>[:<tag>], \<image id> or \<image@digest>)
-* since (\<image-name>[:\<tag>], \<image id> or \<image@digest>)
+* label (label=<v>\<key><> or label=<v>\<key><>=<v>\<value><>)
+* before (<v>\<image-name><>[:<v>\<tag><>], <v>\<image id><> or <v>\<image@digest><>)
+* since (<v>\<image-name><>[:<v>\<tag><>], <v>\<image id><> or <v>\<image@digest><>)
 reference (pattern of an image reference)
 
 #### docker rmi \<image>
@@ -77,6 +79,5 @@ Remove (and un-tag) an image.
 ### Commands for Containers
 
 ## Dockerfile
-
 
 
